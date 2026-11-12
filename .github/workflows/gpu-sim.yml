@@ -27,6 +27,8 @@ name: GPU backend tests (simulated GPU)
 
 on:
   workflow_dispatch:
+  push:
+    branches: [verify-phase-out-fake]
   pull_request:
     paths:
       - "PySDM/**"

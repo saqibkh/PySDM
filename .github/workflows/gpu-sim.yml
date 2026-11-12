@@ -28,6 +28,8 @@ name: GPU backend tests (simulated GPU)
 on:
   workflow_dispatch:
   pull_request:
+  push:
+    branches: [verify-review-slayoo]
 
 concurrency:
   group: gpu-sim-${{ github.ref }}
